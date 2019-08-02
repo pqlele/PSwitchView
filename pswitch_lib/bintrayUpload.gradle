@@ -42,8 +42,8 @@ bintray {
         }
 
         licenses = ['Apache-2.0']
-        vcsUrl = ''
-        websiteUrl = ''
+        vcsUrl = 'https://github.com/muzixiaosi/PSwitchView.git'
+        websiteUrl = 'https://github.com/muzixiaosi/PSwitchView'
 
         labels = ['android']
         publish = true
