@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 28
@@ -20,14 +21,23 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
     implementation 'com.android.support:appcompat-v7:28.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+
+
+publish {
+    repoName = "maven"//仓库名
+    userOrg = 'muzipeng'      //bintray注册的用户名
+    groupId = 'com.pengli'         //compile引用时的第1部分groupId
+    artifactId = 'pswitch'     //compile引用时的第2部分项目名
+    publishVersion = '0.0.1'    //compile引用时的第3部分版本号
+    desc = 'A simple switch view '//项目描述
+    website = 'https://github.com/muzixiaosi/PSwitchView' //github 托管地址
 }

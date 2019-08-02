@@ -29,7 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        app:switch_checked="true"
+        app:switch_checked="false"
         app:switch_close_color="#626868"
         app:switch_dot_color="#E9ECE9"
         app:switch_dot_margin="2dp"

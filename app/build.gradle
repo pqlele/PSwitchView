@@ -28,5 +28,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     implementation project(":pswitch_lib")
+//    implementation 'com.pengli:pswitch:0.0.1'
 
 }
