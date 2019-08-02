@@ -4,7 +4,7 @@
 
 ### attr
 
-| name               e| format                   | des      |
+| name               | format                   | des      |
 |:-------------------|:-------------------------|:---------|
 | switch_open_color  | color                    | 打开状态底部颜色 |
 | switch_close_color | color                    | 关闭状态颜色   |
@@ -19,4 +19,19 @@
 
 ```gradle
     implementation 'com.pengli:pswitch:0.0.1'
+```
+
+```xml
+<com.peng.pswitch.PSwitchView
+        android:id="@+id/view_switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:switch_checked="false"
+        app:switch_close_color="#CDCBCF"
+        app:switch_dot_color="#E91E63"
+        app:switch_dot_margin="2dp"
+        app:switch_open_color="#00BCD4"
+        app:switch_shape="circular"
+        app:switch_slidable="true" />
 ```
