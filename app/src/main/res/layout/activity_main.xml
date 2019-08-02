@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <com.peng.pswitch.PSwitchView
+        android:id="@+id/view_switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:switch_checked="false"
+        app:switch_close_color="#CDCBCF"
+        app:switch_dot_color="#E91E63"
+        app:switch_dot_margin="2dp"
+        app:switch_open_color="#00BCD4"
+        app:switch_shape="circular"
+        app:switch_slidable="true" />
+
+    <com.peng.pswitch.PSwitchView
+        android:id="@+id/view_switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:switch_checked="true"
+        app:switch_close_color="#626868"
+        app:switch_dot_color="#E9ECE9"
+        app:switch_dot_margin="2dp"
+        app:switch_open_color="#41B345"
+        app:switch_shape="rectangle"
+        app:switch_slidable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="toggleTest"
+        android:text="toggle test"
+        android:textAllCaps="false" />
+
+</LinearLayout>

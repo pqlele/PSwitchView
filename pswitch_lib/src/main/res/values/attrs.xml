@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PSwitchView">
+        <attr name="switch_open_color" format="color" />
+        <attr name="switch_close_color" format="color" />
+        <attr name="switch_dot_color" format="color" />
+        <attr name="switch_slidable" format="boolean" />
+        <attr name="switch_dot_margin" format="dimension" />
+        <attr name="switch_checked" format="boolean" />
+        <attr name="switch_shape">
+            <enum name="circular" value="0" />
+            <enum name="rectangle" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+</resources>
